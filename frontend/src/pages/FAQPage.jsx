@@ -72,8 +72,8 @@ const Faq = () => {
             <div className="mt-4">
               <p className="text-base text-gray-500">
                 If you're not satisfied with your purchase, we accept returns
-                within 30 days of delivery. To initiate a return, please email
-                us at support@myecommercestore.com with your order number and a
+                within 15 days of delivery. To initiate a return, please email
+                us at kagujoseph@gmail.com with your order number and a
                 brief explanation of why you're returning the item.
               </p>
             </div>
@@ -123,7 +123,7 @@ const Faq = () => {
               <p className="text-base text-gray-500">
                 You can track your order by clicking the tracking link in your
                 shipping confirmation email, or by logging into your account on
-                our website and viewing the order details.
+                our website and viewing the order details from your profile page.
               </p>
             </div>
           )}
@@ -171,8 +171,8 @@ const Faq = () => {
             <div className="mt-4">
               <p className="text-base text-gray-500">
                 You can contact our customer support team by emailing us at
-                support@myecommercestore.com, or by calling us at (555) 123-4567
-                between the hours of 9am and 5pm EST, Monday through Friday.
+                kagujoseph@gmail.com, or by calling us at (254) 793556537
+                between the hours of 9am and 5pm, Monday to Saturday.
               </p>
             </div>
           )}
@@ -221,8 +221,8 @@ const Faq = () => {
               <p className="text-base text-gray-500">
                 Unfortunately, once an order has been placed, we are not able to
                 make changes or cancellations. If you no longer want the items
-                you've ordered, you can return them for a refund within 30 days
-                of delivery.
+                you've ordered, you can return them for a refund within 15 days
+                of delivery at a small fee.
               </p>
             </div>
           )}
@@ -269,7 +269,7 @@ const Faq = () => {
           {activeTab === 6 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                Currently, we only offer shipping within the United States.
+                Currently, we only offer shipping within Kenya.
               </p>
             </div>
           )}
@@ -316,7 +316,7 @@ const Faq = () => {
           {activeTab === 7 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                We accept visa,mastercard,paypal payment method also we have
+                We accept M-PESA,Bank Transfer,paypal payment method, also we have
                 cash on delivery system.
               </p>
             </div>
