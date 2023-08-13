@@ -1,37 +1,90 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "../../../styles/styles";
 
+const images = [
+  {
+    url:
+      "https://ke.jumia.is/cms/2023/SIS/Adidas/W21/Friday.png",
+    title: "",
+    description: "",
+  },
+  {
+    url:
+      "https://ke.jumia.is/cms/2023/JA23/Teasing/Mystery/J23_Gen_S.gif",
+    title: "",
+    description: "",
+  },
+  {
+    url:
+      "https://ke.jumia.is/cms/2023/FoodFest/March/_S.jpg",
+    title: "",
+    description: "",
+  },
+  {
+    url:
+      "https://ke.jumia.is/cms/2023/W22/CP/Slider/KE_MidYear_Savings_Home_Day_0523_S.jpg",
+    title: "",
+    description: "",
+  },
+  {
+    url:
+      "https://ke.jumia.is/cms/2023/SuperBrandDays/Nivea/March/Live/AfterMath/KE_Nivea_SBD_Generic_0423_S_rvsd.jpg",
+    title: "",
+    description: "",
+  },
+  // add more images as needed
+];
+
 const Hero = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImage((currentImage) =>
+        currentImage === images.length - 1 ? 0 : currentImage + 1
+      );
+    }, 2000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const { url, title, description } = images[currentImage];
+
   return (
     <div
-      className={`relative min-h-[70vh] 800px:min-h-[80vh] w-full bg-no-repeat ${styles.noramlFlex}`}
+      className={`relative h-[60vh] w-full bg-no-repeat ${styles.normalFlex}`}
       style={{
-        backgroundImage:
-          "url(https://themes.rslahmed.dev/rafcart/assets/images/banner-2.jpg)",
+        backgroundImage: `url(${url})`,
+        backgroundSize: "90%",
+        backgroundPosition: "center",
       }}
+    > 
+    
+    <div className={`${styles.section} w-[90%] 800px:w-[60%]`}>
+    <h1
+      className={`text-[35px] leading-[1.2] 800px:text-[60px] text-[#3d3a3a] font-[600] capitalize`}
     >
-      <div className={`${styles.section} w-[90%] 800px:w-[60%]`}>
-        <h1
-          className={`text-[35px] leading-[1.2] 800px:text-[60px] text-[#3d3a3a] font-[600] capitalize`}
-        >
-          Best Collection for <br /> home Decoration
-        </h1>
-        <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[#000000ba]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
-          assumenda? Quisquam itaque <br /> exercitationem labore vel, dolore
-          quidem asperiores, laudantium temporibus soluta optio consequatur{" "}
-          <br /> aliquam deserunt officia. Dolorum saepe nulla provident.
-        </p>
-        <Link to="/products" className="inline-block">
-            <div className={`${styles.button} mt-5`}>
-                 <span className="text-[#fff] font-[Poppins] text-[18px]">
-                    Shop Now
-                 </span>
-            </div>
-        </Link>
-      </div>
-    </div>
+      {title}
+    </h1>
+    <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[#000000ba]">
+      {description}
+    </p>
+    <div className="flex justify-end absolute bottom-0 right-5 mb-1 mr-5">
+  <Link to="/products" className={`${styles.btn} ml-auto`}>
+    <span className="text-[#fff] font-[Poppins] text-[12px]">
+      Shop Now
+    </span>
+  </Link>
+</div>
+    
+  </div>
+
+ 
+
+</div>
+
+
   );
 };
 
