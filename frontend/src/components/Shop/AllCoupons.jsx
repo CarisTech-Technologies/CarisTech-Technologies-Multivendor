@@ -41,7 +41,7 @@ const AllCoupons = () => {
 
   const handleDelete = async (id) => {
     axios.delete(`${server}/coupon/delete-coupon/${id}`,{withCredentials: true}).then((res) => {
-      toast.success("Coupon code deleted succesfully!")
+      toast.success("Coupon code deleted successfully!")
     })
     window.location.reload();
   };
@@ -171,7 +171,7 @@ const AllCoupons = () => {
                   <br />
                   <div>
                     <label className="pb-2">
-                      Discount Percentenge{" "}
+                      Discount Percentage{" "}
                       <span className="text-red-500">*</span>
                     </label>
                     <input
