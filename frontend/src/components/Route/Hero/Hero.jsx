@@ -5,13 +5,13 @@ import styles from "../../../styles/styles";
 const images = [
   {
     url:
-      "https://ke.jumia.is/cms/2023/SIS/Adidas/W21/Friday.png",
+      "https://ke.jumia.is/cms/2023/ODS/Aug/Java_S.jpg",
     title: "",
     description: "",
   },
   {
     url:
-      "https://ke.jumia.is/cms/2023/JA23/Teasing/Mystery/J23_Gen_S.gif",
+      "https://ke.jumia.is/cms/2023/W33/CP/Sliders/Electronics_S.jpg",
     title: "",
     description: "",
   },
@@ -23,13 +23,13 @@ const images = [
   },
   {
     url:
-      "https://ke.jumia.is/cms/2023/W22/CP/Slider/KE_MidYear_Savings_Home_Day_0523_S.jpg",
+      "https://ke.jumia.is/cms/2023/W33/CP/Sliders/_S.jpg",
     title: "",
     description: "",
   },
   {
     url:
-      "https://ke.jumia.is/cms/2023/SuperBrandDays/Nivea/March/Live/AfterMath/KE_Nivea_SBD_Generic_0423_S_rvsd.jpg",
+      "https://ke.jumia.is/cms/2023/W32/CP/Sliders/KE_ThisSeason_Home_0823_S.jpg",
     title: "",
     description: "",
   },
