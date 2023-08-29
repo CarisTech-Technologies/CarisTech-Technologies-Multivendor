@@ -138,4 +138,4 @@ const AllProducts = () => {
   );
 };
 
-export default AllUsers;
+export default AllProducts;
