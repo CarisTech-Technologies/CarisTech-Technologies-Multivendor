@@ -7,8 +7,6 @@ import { Link } from "react-router-dom";
 import { getAllProductsShop } from "../../redux/actions/product";
 import { deleteProduct } from "../../redux/actions/product";
 import Loader from "../Layout/Loader";
-import axios from "axios";
-import { server } from "../../server";
 
 const AllProducts = () => {
   const { products, isLoading } = useSelector((state) => state.products);
@@ -20,14 +18,9 @@ const AllProducts = () => {
     dispatch(getAllProductsShop(seller._id));
   }, [dispatch]);
 
-  const handleDelete = async (id) => {
-    await axios
-    .delete(`${server}/product/delete-shop-product/${id}`, { withCredentials: true })
-    .then((res) => {
-      toast.success(res.data.message);
-    });
-
- // dispatch(getAllUsers());
+  const handleDelete = (id) => {
+    dispatch(deleteProduct(id));
+    window.location.reload();
   };
 
   const columns = [
