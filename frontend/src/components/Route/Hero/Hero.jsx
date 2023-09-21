@@ -5,31 +5,31 @@ import styles from "../../../styles/styles";
 const images = [
   {
     url:
-      "https://ke.jumia.is/cms/2023/ODS/Aug/Java_S.jpg",
+      "https://ke.jumia.is/cms/2023/W37/CP/Sliders/_SFBJ.jpg",
     title: "",
     description: "",
   },
   {
     url:
-      "https://ke.jumia.is/cms/2023/W33/CP/Sliders/Electronics_S.jpg",
+      "https://ke.jumia.is/cms/2023/W38/CP/OkoaMwezi/Sliders/KE_OkoaMwezi_Phones_0823_S.jpg",
     title: "",
     description: "",
   },
   {
     url:
-      "https://ke.jumia.is/cms/2023/FoodFest/March/_S.jpg",
+      "https://ke.jumia.is/cms/2023/SIS/Adidas/W37/Refresh/712.png",
     title: "",
     description: "",
   },
   {
     url:
-      "https://ke.jumia.is/cms/2023/W33/CP/Sliders/_S.jpg",
+      "https://ke.jumia.is/cms/2023/W38/CP/OkoaMwezi/Sliders/KE_FashionWeek_Sneakers_0923_S.jpg",
     title: "",
     description: "",
   },
   {
     url:
-      "https://ke.jumia.is/cms/2023/W32/CP/Sliders/KE_ThisSeason_Home_0823_S.jpg",
+      "https://ke.jumia.is/cms/2023/W37/CP/KE_PartyFest_0923_S_rvsd.jpg",
     title: "",
     description: "",
   },
@@ -44,7 +44,7 @@ const Hero = () => {
       setCurrentImage((currentImage) =>
         currentImage === images.length - 1 ? 0 : currentImage + 1
       );
-    }, 2000);
+    }, 4000);
 
     return () => clearInterval(intervalId);
   }, []);
